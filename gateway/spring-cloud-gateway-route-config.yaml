@@ -1,0 +1,13 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayRouteConfig
+metadata:
+  name: hello-gateway-routes
+spec:
+  service:
+    name: hello-service
+    port: 80
+  routes:
+    - predicates:
+        - Path=/gateway/hello
+      filters:
+        - StripPrefix=1

@@ -1,0 +1,9 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayMapping
+metadata:
+  name: hello-gateway-mapping
+spec:
+  gatewayRef:
+    name: hello-gateway
+  routeConfigRef:
+    name: hello-gateway-routes

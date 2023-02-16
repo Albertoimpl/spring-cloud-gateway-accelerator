@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: hello-catalog-info
+  description: "Catalog for the 'Hello' application"
+spec:
+  targets:
+    - api-gateway.yaml
+    - hello-service.yaml
+    - group.yaml
+    - system.yaml

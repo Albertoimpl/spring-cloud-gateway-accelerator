@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello-service
+  annotations:
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=hello-service"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: hello-team
+  system: hello
+

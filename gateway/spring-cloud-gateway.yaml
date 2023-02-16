@@ -1,0 +1,16 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGateway
+metadata:
+  name: hello-gateway
+spec:
+  service:
+    type: LoadBalancer
+  podOverrides:
+    containers:
+      - name: gateway
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "0.5"
+          limits:
+            memory: "1Gi"

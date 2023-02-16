@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: hello-team
+  description: The hello app team
+spec:
+  type: team
+  profile:
+    displayName: Hello dev team
+    email: hello@example.com
+  children: []
+    
